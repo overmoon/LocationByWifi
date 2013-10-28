@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CurrentRoom" >
+
+    <Button
+        android:id="@+id/setRoom"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/findRoom"
+        android:layout_marginTop="60dp"
+        android:text="Set Room" />
+
+    <Button
+        android:id="@+id/webButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/setRoom"
+        android:layout_alignBottom="@+id/setRoom"
+        android:layout_alignParentLeft="true"
+        android:text="Web Settings" />
+
+    <TextView
+        android:id="@+id/roomID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/findRoom"
+        android:layout_alignRight="@+id/setRoom"
+        android:scrollHorizontally="false"
+        android:text="Find your room"
+        android:textAlignment="center" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roomID"
+        android:layout_alignRight="@+id/findRoom"
+        android:layout_below="@+id/roomID"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:id="@+id/findRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:text="Find my Room" />
+
+</RelativeLayout>
